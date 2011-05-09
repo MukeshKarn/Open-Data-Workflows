@@ -1,0 +1,88 @@
+{
+  "steps": [
+    {
+       "id": "http://data.gov.uk/dataset/dfid-project-information-meeting-iati-standard",
+       "artifact_type": "dcat:Dataset",
+       "title": "DFID Project Information XML download meeting the IATI standard",
+       "description": "These XML downloads about aid projects from the Department for International Development meet the standard set by the International Aid Transparency Initiative",
+       "homepage": "http://data.gov.uk/dataset/dfid-project-information-meeting-iati-standard",
+       
+       "inputs": [
+       ],
+       
+       "process": [
+            
+       ],
+       
+       "agent": {
+            "name": "Public Enquiry Point",
+            "id": "enquiry@dfid.gov.uk"
+       },
+       
+       "createdOrUpdated": {
+            "date": "2011-01-31",
+            "update_frequency": "Monthly",
+            "update_type": "unknown"
+       },
+       
+       "output_representation": [
+            {
+                "url": "http://projects.dfid.gov.uk/IatiXMLFiles/IATI_Countries.zip",
+                "description": "Country information about aid projects funded by the Department for International Development. ",
+                "format": "Other XML"
+            },
+            {
+                "url": "http://projects.dfid.gov.uk/IatiXMLFiles/IATI_Regions.zip",
+                "description": "Regional information about aid projects funded by the Department for International Development. ",
+                "format": "Other XML"
+            },
+            {
+                "url": "http://projects.dfid.gov.uk/IatiXMLFiles/IATI_NonGeographic.zip",
+                "description": "Non-geographic information about aid projects funded by the Department for International Development. ",
+                "format": "Other XML"
+            }
+       ]
+    
+    },
+    {
+       "id": "http://workflow.opendataimpacts.net/workflows/iati-explorer-1",
+       "artifact_type": "odw:MashUp",
+       "title": "Exhibit Interface onto IATI Data",
+       "description": "A tool for browsing IATI Data in an interactive way. Explore spending on a map, in a table or on a timeline. Includes Google Visualisation of locations and spend over time.",
+       "homepage": "http://aidinfolabs.org/laboratory/IATI-Data-Explorer/",
+       "seeAlso": "http://aidinfolabs.org/archives/4",
+       "inputs": [
+            "http://data.gov.uk/dataset/dfid-project-information-meeting-iati-standard",
+            "http://www.simile-widgets.org/exhibit/"
+       ],
+             
+       "process": [
+            {
+                "type": "odw:Visualize",
+                "description": "Using Exhibit to visualise data in an interactive way"
+            }
+       ],
+       
+       "createdOrUpdated": {
+            "date": "2011-02-2007",
+            "update_frequency": "Daily",
+            "update_type": "live"
+       },
+       
+       "agent": {
+            "name": "Tim Davies",
+            "id": "http://www.timdavies.org.uk/"
+       },
+       
+       "output_representation": [
+            
+       ]
+    
+    } 
+  ],
+  "comments": {
+    "id": "Every step should be identified by it's URI",
+    "artifact_type": "Artifact types re-use CURIE IDs for types of things where available e.g. dcat:Dataset, doap:Project. Where not available, we will define our own (e.g. odw:visualization, odw:mashUp)"
+   }
+}
+

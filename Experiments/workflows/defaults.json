@@ -1,0 +1,42 @@
+{
+    "artifacts": [
+        {
+            "id":"dcat:Dataset",
+            "title":"Dataset"
+        },
+        {
+            "id":"doap:Project",
+            "title":"Software Project"
+        },
+        {
+            "id":"odw:MashUp",
+            "title":"MashUp"
+        },
+        {
+            "id":"odw:Visualization",
+            "title":"Vizualisation"
+        },
+        {
+            "id":"odw:Website",
+            "title":"Website"
+        },
+        {
+            "id":"odw:Presentation",
+            "title":"Report or Presentation"
+        }
+    ],
+    "processes": [
+        {
+          "id":"odw:IntermediateStep",
+          "title":"Intermediate Step"
+        },
+        {
+            "id":"odw:Merge",
+            "title":"Merge Datasets"
+        },
+        {
+            "id":"odw:Visualize",
+            "title":"Data Vizualisation"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+body {
+    font-family:sans-serif;	
+}
+
+.step_form {
+    display:block;
+    padding:5px;
+    border: 2px black dashed;
+    margin:20px;	
+}
+.step_field {
+	display:block;
+}
+
+.step_field input {
+    width:250px;	
+}
+
+.step_field .label {
+	display:inline-block;
+    width:150px;	
+    text-align:right;
+    vertical-align:top;
+    padding-top:5px;
+    font-size:10pt;
+    font-weight:bold;
+}
